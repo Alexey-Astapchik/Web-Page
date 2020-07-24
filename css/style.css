@@ -1,16 +1,22 @@
-*{
+*,
+*::after,
+*::before{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
 }
 body{
     background-color: #fffffe;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 16px;
     line-height: 1.7;
     color: #272343;
     padding: 30px;
+    box-sizing: border-box;
 }
 
 .header{
@@ -32,17 +38,18 @@ img{
 }
 
 
-.logo-box{
+.header__logo-box{
     position: absolute;
     top: 50px;
-    left: 50px;
+    right: 50px;
+    opacity: 1;
 }
-.logo{
+.header__logo{
     height: 50px;
     /* animation: moveInRight 2s ease-out; */
 }
 
-.header-box{
+.header__text-box{
     position: absolute;
     top: 10%;
     left: 50%;
@@ -76,10 +83,22 @@ img{
     animation: moveInRight 3s ease-out;
 }
 
+@keyframes moveFromDownToUp{
+    0% {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @keyframes moveInLeft{
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translatex(-100px);
     }
 
     80% {
@@ -135,4 +154,5 @@ img{
     font-size: 16px;
     line-height: 1.7;
     color: #272343;
+    animation: moveFromDownToUp 3s ease-out;
 }
