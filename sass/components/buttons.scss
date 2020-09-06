@@ -1,0 +1,31 @@
+.btn {
+    & :hover{
+        transform: translateY(-4px);
+        box-shadow: $box-shadow-hover;
+    }
+    
+    & :active{
+        transform: translateY(-3px);
+        box-shadow: 0 5px 10px rgb(0,0,0,.2);
+    }
+    
+    & :link,
+    & :visited{
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 15px 40px;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all .3s;
+    }
+    
+    & btn-yellow{
+        background-color: $color-btn;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.7;
+        color: $color-font;
+        animation: moveFromDownToUp 3s ease-out;
+    }
+}

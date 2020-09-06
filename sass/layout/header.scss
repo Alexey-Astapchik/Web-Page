@@ -1,0 +1,55 @@
+.header{
+    height: 95vh;
+    background-image: url('../img/header.jpeg');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    opacity:0.8;
+    -moz-opacity:0.8;
+    filter: alpha(opacity=90) black;
+    -khtml-opacity: 0.8;
+    background-color:#000;
+
+    & header__logo-box{
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        opacity: 1;
+        & header__logo{
+            height: 50px;
+            & img{
+                opacity: 2; 
+            }
+        }
+    }
+    & header__text-box{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-20%, 10%);
+        text-align: center;
+        & main_header{
+            text-transform: uppercase;
+            opacity: 1;
+            backface-visibility: hidden;
+            margin-bottom: 30px;
+            & header-primary{
+                letter-spacing: 35px;
+                display: block;
+                font-size: 60px;
+                font-weight: 500;
+                text-shadow: 2px 2px #2d334a;
+                margin-bottom: 20px;
+                animation: moveInLeft 3s ease-out;
+                & header-sub{
+                    display: block;
+                    font-size: 30px;
+                    font-weight: 600;
+                    letter-spacing: 17.4px;
+                    text-shadow: 1px 1px #2d334a;
+                    animation: moveInRight 3s ease-out;
+                }
+            }
+        }
+    }
+}

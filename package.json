@@ -1,0 +1,26 @@
+{
+  "name": "web-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexey-Astapchik/Web-Page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexey-Astapchik/Web-Page/issues"
+  },
+  "homepage": "https://github.com/Alexey-Astapchik/Web-Page#readme",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "description": ""
+}
