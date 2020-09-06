@@ -1,16 +1,16 @@
 .btn {
-    & :hover{
+    &:hover{
         transform: translateY(-4px);
         box-shadow: $box-shadow-hover;
     }
     
-    & :active{
+    &:active{
         transform: translateY(-3px);
-        box-shadow: 0 5px 10px rgb(0,0,0,.2);
+        box-shadow: 0 5px 10px rgba(0,0,0,.2);
     }
     
-    & :link,
-    & :visited{
+    &:link,
+    &:visited{
         text-decoration: none;
         text-transform: uppercase;
         padding: 15px 40px;
@@ -19,7 +19,7 @@
         transition: all .3s;
     }
     
-    & btn-yellow{
+    &-yellow{
         background-color: $color-btn;
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
