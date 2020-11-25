@@ -36,21 +36,5 @@
         backface-visibility: hidden;
         margin-bottom: 30px;
     }
-    &__primary{
-        letter-spacing: 35px;
-        display: block;
-        font-size: 60px;
-        font-weight: 500;
-        text-shadow: 2px 2px #2d334a;
-        margin-bottom: 20px;
-        animation: moveInLeft 3s ease-out;  
-    }
-    &__sub{
-        display: block;
-        font-size: 30px;
-        font-weight: 600;
-        letter-spacing: 17.4px;
-        text-shadow: 1px 1px #2d334a;
-        animation: moveInRight 3s ease-out;
-    }
+    
 }

@@ -15,7 +15,7 @@
         text-transform: uppercase;
         padding: 15px 40px;
         display: inline-block;
-        border-radius: 100px;
+        border-radius: 10rem;
         transition: all .3s;
     }
     
@@ -27,5 +27,16 @@
         line-height: 1.7;
         color: $color-font;
         animation: moveFromDownToUp 3s ease-out;
+    }
+}
+
+.second-btn{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.7;
+    color: $color-font;
+    &:hover{
+        background-color: $color-btn;
     }
 }
