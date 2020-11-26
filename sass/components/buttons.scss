@@ -28,6 +28,11 @@
         color: $color-font;
         animation: moveFromDownToUp 3s ease-out;
     }
+    &-white{
+        background-color: $card-light-color;
+        font-weight: 400;
+        font-size: 17px;
+    }
 }
 
 .second-btn{

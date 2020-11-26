@@ -1,0 +1,119 @@
+.card{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 50rem;
+
+    &-side{
+        background-color: #2d334a;
+        height: 50rem;
+        color: white;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        box-shadow: 0 1.5rem 4rem rgba(black, .9);
+
+        &-front{
+            background-color: #2d334a;
+        }
+
+        &-back{
+            transform: rotateY(180deg);
+            color:  $color-back-card;
+
+            &-1{
+                background-color: #ff8ba7;
+            }
+
+            &-2{
+                background-color: #ff8906;
+            }
+
+            &-3{
+                background-color: #f25f4c;
+            }
+        }
+    }
+
+
+    &:hover &-side-front{
+        transform: rotateY(180deg);
+    }
+    &:hover &-side-back{
+        transform: rotateY(0);
+    }
+
+    &-picture{
+        background-size: cover;
+        border-radius: 10px;
+        height: 23rem;
+        &-1{
+            background-image: url('/img/card_pic_1.jpg');
+        }
+
+        &-2{
+            background-image: url('/img/card-pic-2.jpg');
+        }
+
+        &-3{
+            background-image: url('/img/card-pic-3.jpg');
+        }
+    }
+
+    &-header{
+        font-size: 2.8rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: right;
+        color:$card-light-color;
+        position: absolute;
+        top: 14rem;
+        right: 2rem;
+    }
+
+    &-details{
+        padding: 3rem;
+        ul{
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+            li{
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child){
+                    border-bottom: 1px solid $card-light-color;
+                }
+            }
+        }
+    }
+
+    &-cta{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+    &-price-box{
+        text-align: center;
+        color: $card-light-color;
+        // margin-bottom: 8rem;
+    }
+
+    &-price-only{
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    &-price-value{
+        font-size: 6rem;
+        font-weight: 500;
+    }
+}
