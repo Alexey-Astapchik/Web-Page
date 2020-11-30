@@ -11,3 +11,19 @@
 .section-tours{
     // padding: 20rem 0 50rem 0;;
 }
+
+.section-stories{
+    position: relative;
+}
+
+.book{
+    background-color: $color-back-card;
+    background-size: 100%;
+    border-radius: 9px;
+    box-shadow: 0 1.5rem 4rem rgba(black, .9);
+    height: 50rem;
+    &-form{
+        width: 60%;
+        padding: 6rem;
+    }
+}

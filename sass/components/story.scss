@@ -1,0 +1,56 @@
+.story{
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 1.5rem 4rem rgba(black, .9);
+    background-color: rgba(white, .2);
+    border-radius: 8px;
+    padding: 6rem;
+    font-size: $default-font-size;
+    color: #fffffe;
+    margin-bottom: 110px;
+
+    &-shape{
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        -webkit-shape-outside: circle(50% at 50% 50%); 
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        position: relative;
+        transform: translateX(-3rem);
+    } 
+    &-img{
+        width: 100%;
+        backface-visibility: hidden;
+        transform: scale(1.2);
+        transition: all .5s ease;
+    }
+    .heading-tertiary{
+        font-size: 1.9rem;
+        color: $card-light-color;
+        font-weight: 500;
+    }
+
+    &-caption{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s ease;
+        backface-visibility: hidden;
+    }
+    &:hover &-caption{
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    } 
+    &:hover &-img{
+        width: 100%;
+        transform: scale(1) brightness(80%);
+        filter: blur(4px);
+    }
+}

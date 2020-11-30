@@ -22,10 +22,15 @@
     text-shadow: 1px 1px #2d334a;
     letter-spacing: 5px;
     display: inline-block;
+
+    &-story{
+        margin-top: 50px;
+        color: #ffffff;
+    }
 }
 .heading-tertiary{
     font-size: 2.5rem;
-    color: #2d334a;
+    color: #272343;
     letter-spacing: 5px;
     font-weight: 600;
     display: inline-block;

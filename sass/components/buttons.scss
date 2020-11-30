@@ -41,7 +41,11 @@
     font-size: 16px;
     line-height: 1.7;
     color: $color-font;
+    background-color: $color-btn;
     &:hover{
         background-color: $color-btn;
+    }
+    &-story{
+        margin-bottom: 60px;
     }
 }
